@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2025 at 11:06 PM
+-- Generation Time: May 10, 2025 at 01:48 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -68,7 +68,16 @@ INSERT INTO `auth` (`id`, `token`, `user_id`) VALUES
 (15, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NTk2ODc0NSwiZXhwIjoxNzQ1OTcyMzQ1fQ.pLY8BCKfcEh5Gpxd3UAyCrM2lYU7L-609GvIDh6InUM', 3),
 (16, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjA2MTg1NiwiZXhwIjoxNzQ2MDY1NDU2fQ.gOtGW5cZwUjKIZaE5Mp17g5xemsP4aMFNJ5ZXpXhhhg', 3),
 (17, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjA2MjAzMywiZXhwIjoxNzQ2MDY1NjMzfQ.-O89-1GN4LAjru6ERx-rNT4RYjLywcmlj-D4I5dP32M', 3),
-(18, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjA2NzA0MCwiZXhwIjoxNzQ2MDcwNjQwfQ.vHn6B0-Z-Qg-DU8rg7u3t_0pdzoJXD8YhlvHIBmkkgA', 3);
+(18, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjA2NzA0MCwiZXhwIjoxNzQ2MDcwNjQwfQ.vHn6B0-Z-Qg-DU8rg7u3t_0pdzoJXD8YhlvHIBmkkgA', 3),
+(19, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjEzMzk4MSwiZXhwIjoxNzQ2MTM3NTgxfQ.fedotBlklMRahsXADGpa_v98y8-9CjX9pgT1QkvROkw', 3),
+(20, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjEzNTMyMiwiZXhwIjoxNzQ2MTM4OTIyfQ.IujWgNn3zZZS6SJa_-kU-GpDyaDkJIWKx_BPsrHBrl8', 3),
+(21, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0Njc0NTM1NSwiZXhwIjoxNzQ2NzQ4OTU1fQ.9ufHJ7dHA7tJUf9cG6uk83lKKPpjIIKp2bA2kvQ-gp0', 3),
+(22, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NjgyMjExNCwiZXhwIjoxNzQ2ODI1NzE0fQ.ucJZeebCOzB3fWZq0_A9p8UWbJ0ZOFelPVTzsOFOWHI', 6),
+(23, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NjgyNTgyNSwiZXhwIjoxNzQ2ODI5NDI1fQ.qRI60C6PaPuOTItYMXhKObPZrOD8KmHmYRpfx44kjNk', 6),
+(24, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjgyNzkxMiwiZXhwIjoxNzQ2ODMxNTEyfQ.iEVCVZpgOdZliq1PRiL2PLnh8WyPYey_Et0iPg8gcro', 3),
+(25, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjgzMDQ1MywiZXhwIjoxNzQ2ODM0MDUzfQ.mXLfuV814RCFIUTugsO9oxQUeX76wQfjehgCQ16btWo', 3),
+(26, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjgzMjE0MiwiZXhwIjoxNzQ2ODM1NzQyfQ.h-1YWit11_O7hth-k0bo1MUS920N7TIBMLzY7NbZoD0', 3),
+(27, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NjgzMjE4MCwiZXhwIjoxNzQ2ODM1NzgwfQ.OaeyVacJzAzo_dpHCjo_c0xXuGMSjcxP2LNxfovA8E8', 6);
 
 -- --------------------------------------------------------
 
@@ -162,7 +171,8 @@ CREATE TABLE `company` (
 
 INSERT INTO `company` (`id`, `name`, `description`, `image_url`, `user_id`, `location_id`, `created`, `updated`) VALUES
 (1, 'Tech Solutions Inc.', 'Providing IT services and support', 'https://example.com/techsolutions.jpg', 6, 2, '2025-04-29 13:58:43', '2025-04-29 13:58:43'),
-(2, 'Home Services LLC', 'Professional home maintenance and repair', 'https://example.com/homeservices.jpg', 6, 3, '2025-04-29 13:58:43', '2025-04-29 13:58:43');
+(2, 'Home Services LLC', 'Professional home maintenance and repair', 'https://example.com/homeservices.jpg', 6, 3, '2025-04-29 13:58:43', '2025-04-29 13:58:43'),
+(3, 'Tech Solutions Inc.', 'IT services company', 'https://example.com/logo.jpg', 6, 5, '2025-05-09 23:22:19', '2025-05-09 23:22:19');
 
 -- --------------------------------------------------------
 
@@ -224,10 +234,10 @@ CREATE TABLE `job` (
 --
 
 INSERT INTO `job` (`id`, `name`, `description`, `created`, `updated`) VALUES
-(1, 'Web Development', 'Building responsive websites', '2025-04-29 14:01:02', '2025-04-29 14:01:02'),
-(2, 'System Maintenance', 'Regular IT system checkups', '2025-04-29 14:01:02', '2025-04-29 14:01:02'),
+(2, 'Senior Frontend Developer', 'Updated job requirements', '2025-04-29 14:01:02', '2025-05-10 02:18:28'),
 (3, 'Pipe Repair', 'Fixing leaking pipes', '2025-04-29 14:01:02', '2025-04-29 14:01:02'),
-(4, 'Electrical Installation', 'Installing new electrical systems', '2025-04-29 14:01:02', '2025-04-29 14:01:02');
+(4, 'Electrical Installation', 'Installing new electrical systems', '2025-04-29 14:01:02', '2025-04-29 14:01:02'),
+(6, 'Backend Developer', 'Node.js developer needed', '2025-05-10 02:16:11', '2025-05-10 02:16:11');
 
 -- --------------------------------------------------------
 
@@ -248,10 +258,10 @@ CREATE TABLE `job_application` (
 --
 
 INSERT INTO `job_application` (`id`, `job_id`, `company_id`, `created`, `updated`) VALUES
-(1, 1, 1, '2025-04-29 14:01:23', '2025-04-29 14:01:23'),
 (2, 2, 1, '2025-04-29 14:01:23', '2025-04-29 14:01:23'),
 (3, 3, 2, '2025-04-29 14:01:23', '2025-04-29 14:01:23'),
-(4, 4, 2, '2025-04-29 14:01:23', '2025-04-29 14:01:23');
+(4, 4, 2, '2025-04-29 14:01:23', '2025-04-29 14:01:23'),
+(6, 6, 1, '2025-05-10 02:16:11', '2025-05-10 02:16:11');
 
 -- --------------------------------------------------------
 
@@ -273,7 +283,8 @@ INSERT INTO `location` (`id`, `zip_code`, `city_id`) VALUES
 (1, 105, 1),
 (2, 10001, 2),
 (3, 90001, 3),
-(4, 301, 1);
+(4, 301, 1),
+(5, 10001, 2);
 
 -- --------------------------------------------------------
 
@@ -397,9 +408,38 @@ CREATE TABLE `project` (
 --
 
 INSERT INTO `project` (`id`, `name`, `client_id`, `team_id`, `Initial_price`, `max_price`, `actual_price`, `description`, `start_date`, `end_date`, `Initial_time_s`, `final_time_s`, `actual_time`, `created`, `updated`) VALUES
-(1, 'Company Website', 1, 1, 5000, 7500, 6000, 'Build a new company website', '2025-04-01', '2025-05-15', 3600, 7200, 5400, '2025-04-29 14:01:51', '2025-04-29 14:01:51'),
+(1, 'Updated Project Name', 1, 1, 5000, 7500, 6000, 'Build a new company website', '2025-04-01', '2025-10-01', 3600, 7200, 5400, '2025-04-29 14:01:51', '2025-05-10 00:34:43'),
 (2, 'Office Network Setup', 2, 2, 3000, 4500, 3200, 'Setup office network infrastructure', '2025-04-10', '2025-04-30', 1800, 3600, 2400, '2025-04-29 14:01:51', '2025-04-29 14:01:51'),
-(3, 'Bathroom Remodel', 3, 3, 8000, 12000, 9500, 'Complete bathroom renovation', '2025-05-01', '2025-06-15', 7200, 14400, 10800, '2025-04-29 14:01:51', '2025-04-29 14:01:51');
+(3, 'Bathroom Remodel', 3, 3, 8000, 12000, 9500, 'Complete bathroom renovation', '2025-05-01', '2025-06-15', 7200, 14400, 10800, '2025-04-29 14:01:51', '2025-04-29 14:01:51'),
+(4, 'Mobile App Development', 1, 1, 10000, 15000, NULL, 'iOS and Android app', '2025-06-01', '2025-09-01', NULL, NULL, NULL, '2025-05-09 23:55:05', '2025-05-09 23:55:05');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `project_milestone`
+--
+
+CREATE TABLE `project_milestone` (
+  `id` int(11) NOT NULL,
+  `project_id` bigint(20) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `due_date` date NOT NULL,
+  `completed` tinyint(1) DEFAULT 0,
+  `completion_date` date DEFAULT NULL,
+  `created` datetime DEFAULT current_timestamp(),
+  `updated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `project_milestone`
+--
+
+INSERT INTO `project_milestone` (`id`, `project_id`, `name`, `description`, `due_date`, `completed`, `completion_date`, `created`, `updated`) VALUES
+(1, 1, 'Updated Milestone Name', 'Client approves initial designs', '2025-07-15', 1, NULL, '2025-05-10 00:14:25', '2025-05-10 00:27:10'),
+(2, 1, 'Core Development', 'Complete main functionality', '2025-07-20', 0, NULL, '2025-05-10 00:14:25', '2025-05-10 00:14:25'),
+(3, 1, 'Testing Phase', 'Quality assurance testing', '2025-08-10', 0, NULL, '2025-05-10 00:14:25', '2025-05-10 00:14:25'),
+(5, 1, 'UI Implementation', 'Complete frontend development', '2025-07-10', 0, NULL, '2025-05-10 00:24:34', '2025-05-10 00:24:34');
 
 -- --------------------------------------------------------
 
@@ -443,9 +483,7 @@ CREATE TABLE `provider_job` (
 --
 
 INSERT INTO `provider_job` (`id`, `provider_id`, `job_application_id`, `created`, `updated`) VALUES
-(1, 1, 1, '2025-04-29 14:01:38', '2025-04-29 14:01:38'),
-(2, 2, 3, '2025-04-29 14:01:38', '2025-04-29 14:01:38'),
-(3, 3, 4, '2025-04-29 14:01:38', '2025-04-29 14:01:38');
+(12, 3, 2, '2025-05-10 02:43:56', '2025-05-10 02:43:56');
 
 -- --------------------------------------------------------
 
@@ -468,7 +506,8 @@ CREATE TABLE `provider_team` (
 INSERT INTO `provider_team` (`id`, `service_provider_id`, `team_id`, `created`, `updated`) VALUES
 (1, 1, 1, '2025-04-29 13:59:31', '2025-04-29 13:59:31'),
 (2, 2, 3, '2025-04-29 13:59:31', '2025-04-29 13:59:31'),
-(3, 3, 4, '2025-04-29 13:59:31', '2025-04-29 13:59:31');
+(3, 3, 4, '2025-04-29 13:59:31', '2025-04-29 13:59:31'),
+(4, 2, 1, '2025-05-09 23:44:39', '2025-05-09 23:44:39');
 
 -- --------------------------------------------------------
 
@@ -527,8 +566,8 @@ CREATE TABLE `task` (
 --
 
 INSERT INTO `task` (`id`, `service_provider_id`, `client_id`, `completed`, `cancelled`, `estimated_distance`, `estimated_timing`, `description`, `Initial_price`, `Maximum_price`, `created`, `updated`, `status`, `rejection_reason`, `notes`, `actual_time`, `actual_price`) VALUES
-(1, 1, 1, 1, 0, NULL, '02:00:00', 'Develop homepage', 150, 1500, '2025-04-29 14:02:00', '2025-05-01 04:30:00', 'completed', NULL, 'Will need special tools', 90, 175.5),
-(2, 1, 1, 0, 0, NULL, '12:00:00', 'Develop admin panel', 1500, 2000, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL),
+(1, 1, 1, 0, 0, NULL, '02:00:00', 'Develop homepage', 150, 1500, '2025-04-29 14:02:00', '2025-05-02 00:37:48', 'pending', NULL, 'Will need special tools', 90, 175.5),
+(2, 1, 1, 0, 0, NULL, '02:00:00', 'Develop admin panel', 150, 2000, '2025-04-29 14:02:00', '2025-05-10 00:59:36', 'rejected', 'Testttt', 'Will need special tools', 90, 175.5),
 (3, 2, 3, 0, 0, 15.5, '04:00:00', 'Replace bathroom pipes', 1200, 1800, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL),
 (4, 3, 2, 0, 0, NULL, '06:00:00', 'Install network cables', 800, 1200, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL);
 
@@ -555,7 +594,8 @@ INSERT INTO `team` (`id`, `name`, `description`, `company_id`, `created`, `updat
 (1, 'Development Team', 'Software development team', 1, '2025-04-29 13:59:04', '2025-04-29 13:59:04'),
 (2, 'Support Team', 'Customer support specialists', 1, '2025-04-29 13:59:04', '2025-04-29 13:59:04'),
 (3, 'Plumbing Team', 'Certified plumbing professionals', 2, '2025-04-29 13:59:04', '2025-04-29 13:59:04'),
-(4, 'Electrical Team', 'Licensed electricians', 2, '2025-04-29 13:59:04', '2025-04-29 13:59:04');
+(4, 'Electrical Team', 'Licensed electricians', 2, '2025-04-29 13:59:04', '2025-04-29 13:59:04'),
+(5, 'QA Team', 'Quality assurance team', 1, '2025-05-09 23:35:38', '2025-05-09 23:35:38');
 
 -- --------------------------------------------------------
 
@@ -584,7 +624,7 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `first_name`, `last_name`, `email`, `phone`, `password`, `image_url`, `facebook_url`, `location_id`, `created`, `updated`) VALUES
 (1, 'Rawand', 'Aqel', 'Rawand@gmail.com', 0, 'Rawand12345', 'Test', 'test', 1, '2025-03-19 02:21:40', '2025-03-19 05:04:39'),
 (2, 'John', 'Doe', 'john.doe@example.com', 0, 'password123', 'https://example.com/john.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:16:20', '2025-03-19 05:16:20'),
-(3, 'John', 'Doe', '', 0, 'password123', 'https://example.com/newphoto.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:17:42', '2025-05-01 05:54:48'),
+(3, 'John', 'Doe', 'jane.smith@example.com', 0, 'password123', 'https://example.com/newphoto.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:17:42', '2025-05-02 00:38:50'),
 (4, 'Rawand', 'Aqel', 'Rawand@example.com', 0, 'password123', 'https://example.com/jane.jpg', 'https://facebook.com/jane.smith', 4, '2025-04-29 13:52:48', '2025-04-29 13:52:48'),
 (5, 'Michael', 'Johnson', 'michael.johnson@example.com', 0, 'securepass123', 'https://example.com/michael.jpg', 'https://facebook.com/michael.johnson', 2, '2025-04-29 13:55:57', '2025-04-29 13:55:57'),
 (6, 'Sarah', 'Williams', 'sarah.williams@example.com', 0, 'sarahpass456', 'https://example.com/sarah.jpg', 'https://facebook.com/sarah.williams', 3, '2025-04-29 13:55:57', '2025-04-29 13:55:57'),
@@ -711,6 +751,13 @@ ALTER TABLE `project`
   ADD KEY `team_id` (`team_id`);
 
 --
+-- Indexes for table `project_milestone`
+--
+ALTER TABLE `project_milestone`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `project_id` (`project_id`);
+
+--
 -- Indexes for table `provider_feedback`
 --
 ALTER TABLE `provider_feedback`
@@ -723,8 +770,8 @@ ALTER TABLE `provider_feedback`
 --
 ALTER TABLE `provider_job`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `provider_id` (`provider_id`),
-  ADD KEY `job_application_id` (`job_application_id`);
+  ADD KEY `job_application_id` (`job_application_id`),
+  ADD KEY `provider_job_ibfk_3` (`provider_id`);
 
 --
 -- Indexes for table `provider_team`
@@ -778,7 +825,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `auth`
 --
 ALTER TABLE `auth`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `chat`
@@ -802,7 +849,7 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `company`
 --
 ALTER TABLE `company`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `company_feedback`
@@ -820,19 +867,19 @@ ALTER TABLE `company_settings`
 -- AUTO_INCREMENT for table `job`
 --
 ALTER TABLE `job`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `job_application`
 --
 ALTER TABLE `job_application`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `location`
 --
 ALTER TABLE `location`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pay_info`
@@ -862,7 +909,13 @@ ALTER TABLE `position_provider`
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `project_milestone`
+--
+ALTER TABLE `project_milestone`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `provider_feedback`
@@ -874,13 +927,13 @@ ALTER TABLE `provider_feedback`
 -- AUTO_INCREMENT for table `provider_job`
 --
 ALTER TABLE `provider_job`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `provider_team`
 --
 ALTER TABLE `provider_team`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `service_provider`
@@ -898,7 +951,7 @@ ALTER TABLE `task`
 -- AUTO_INCREMENT for table `team`
 --
 ALTER TABLE `team`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`
@@ -996,6 +1049,12 @@ ALTER TABLE `project`
   ADD CONSTRAINT `project_ibfk_2` FOREIGN KEY (`team_id`) REFERENCES `team` (`id`) ON DELETE CASCADE;
 
 --
+-- Constraints for table `project_milestone`
+--
+ALTER TABLE `project_milestone`
+  ADD CONSTRAINT `fk_milestone_project` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Constraints for table `provider_feedback`
 --
 ALTER TABLE `provider_feedback`
@@ -1006,8 +1065,8 @@ ALTER TABLE `provider_feedback`
 -- Constraints for table `provider_job`
 --
 ALTER TABLE `provider_job`
-  ADD CONSTRAINT `provider_job_ibfk_1` FOREIGN KEY (`provider_id`) REFERENCES `service_provider` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `provider_job_ibfk_2` FOREIGN KEY (`job_application_id`) REFERENCES `job_application` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `provider_job_ibfk_2` FOREIGN KEY (`job_application_id`) REFERENCES `job_application` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `provider_job_ibfk_3` FOREIGN KEY (`provider_id`) REFERENCES `service_provider` (`id`);
 
 --
 -- Constraints for table `provider_team`
