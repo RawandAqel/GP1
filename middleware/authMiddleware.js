@@ -80,7 +80,35 @@ const authorizeProvider = async (req, res, next) => {
     }
 };
 
+const authorizeCompanyOwner = async (req, res, next) => {
+    try {
+        // Check if user owns the company they're trying to modify
+        if (req.params.companyId) {
+            const [company] = await pool.query(
+                'SELECT * FROM company WHERE id = ? AND user_id = ?',
+                [req.params.companyId, req.user.id]
+            );
+
+            if (!company.length) {
+                return res.status(403).json({
+                    success: false,
+                    message: 'Not authorized as company owner'
+                });
+            }
+        }
+        
+        next();
+    } catch (error) {
+        console.error('Company owner authorization error:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Server error during company owner authorization'
+        });
+    }
+};
+
 module.exports = {
     authenticate,
-    authorizeProvider
+    authorizeProvider,
+    authorizeCompanyOwner
 };
