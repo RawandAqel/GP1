@@ -20,6 +20,7 @@ const {
 } = require('../controllers/companyOwnerController');
 const { authenticate, authorizeCompanyOwner } = require('../middleware/authMiddleware');
 
+
 const router = express.Router();
 
 // Company management
