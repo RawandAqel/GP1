@@ -1,6 +1,40 @@
 const pool = require('../config/db');
 // const { v4: uuidv4 } = require('uuid');
+// 0. Get all companies
+const getOwnerCompanies = async (req, res) => {
+    try {
+        const ownerId = req.user.id; // From authenticated user
 
+        const [companies] = await pool.query(`
+            SELECT 
+                c.*,
+                COUNT(DISTINCT t.id) AS team_count,
+                COUNT(DISTINCT pt.service_provider_id) AS employee_count,
+                loc.zip_code,
+                city.name AS city_name
+            FROM company c
+            LEFT JOIN team t ON c.id = t.company_id
+            LEFT JOIN provider_team pt ON t.id = pt.team_id
+            LEFT JOIN location loc ON c.location_id = loc.id
+            LEFT JOIN city ON loc.city_id = city.id
+            WHERE c.user_id = ?
+            GROUP BY c.id
+            ORDER BY c.created DESC
+        `, [ownerId]);
+
+        res.status(200).json({
+            success: true,
+            count: companies.length,
+            companies
+        });
+    } catch (error) {
+        console.error('Error fetching owner companies:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Server error while fetching companies'
+        });
+    }
+};
 // 1. Create new company
 const createCompany = async (req, res) => {
     try {
@@ -656,6 +690,7 @@ const removeApplicant = async (req, res) => {
 };
 
 module.exports = {
+    getOwnerCompanies,
     createCompany,
     getTeams,
     getTeam,
