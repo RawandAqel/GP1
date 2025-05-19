@@ -1,5 +1,6 @@
 const express = require('express');
 const { 
+    getOwnerCompanies,
     createCompany,
     getTeams,
     getTeam,
@@ -49,5 +50,6 @@ router.put('/jobs/:jobId', authenticate, authorizeCompanyOwner, updateJob);
 router.get('/jobs/:jobId/applicants', authenticate, authorizeCompanyOwner, getJobApplicants);
 router.post('/jobs/:jobId/applicants', authenticate, authorizeCompanyOwner, addApplicant);
 router.delete('/applications/:applicationId', authenticate, authorizeCompanyOwner, removeApplicant);
+router.get('/my-companies', authenticate, authorizeCompanyOwner, getOwnerCompanies);
 
 module.exports = router;

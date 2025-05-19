@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2025 at 01:48 AM
+-- Generation Time: May 17, 2025 at 05:00 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -33,13 +33,6 @@ CREATE TABLE `admin` (
   `created` datetime DEFAULT current_timestamp(),
   `updated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`id`, `user_id`, `created`, `updated`) VALUES
-(1, 6, '2025-04-29 13:56:40', '2025-04-29 13:56:40');
 
 -- --------------------------------------------------------
 
@@ -77,7 +70,11 @@ INSERT INTO `auth` (`id`, `token`, `user_id`) VALUES
 (24, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjgyNzkxMiwiZXhwIjoxNzQ2ODMxNTEyfQ.iEVCVZpgOdZliq1PRiL2PLnh8WyPYey_Et0iPg8gcro', 3),
 (25, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjgzMDQ1MywiZXhwIjoxNzQ2ODM0MDUzfQ.mXLfuV814RCFIUTugsO9oxQUeX76wQfjehgCQ16btWo', 3),
 (26, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NjgzMjE0MiwiZXhwIjoxNzQ2ODM1NzQyfQ.h-1YWit11_O7hth-k0bo1MUS920N7TIBMLzY7NbZoD0', 3),
-(27, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NjgzMjE4MCwiZXhwIjoxNzQ2ODM1NzgwfQ.OaeyVacJzAzo_dpHCjo_c0xXuGMSjcxP2LNxfovA8E8', 6);
+(27, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NjgzMjE4MCwiZXhwIjoxNzQ2ODM1NzgwfQ.OaeyVacJzAzo_dpHCjo_c0xXuGMSjcxP2LNxfovA8E8', 6),
+(28, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NzI2MjY4MSwiZXhwIjoxNzQ3MjY2MjgxfQ.Ry2nKG_pnjICOBMJ7MfQxxxEtyzn6rVW5ukey34_12M', 3),
+(29, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0NzI2MjkwMSwiZXhwIjoxNzQ3MjY2NTAxfQ.qGabE0TZ6YD07lSeJufBl73Pu9Anw-_VBibZlLHvVl4', 5),
+(30, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzQ5MTMwMCwiZXhwIjoxNzQ3NDk0OTAwfQ.zlUybgVowOXSu2_K2TBO2_NhvNeiP0cSy2tGonLY4ZA', 6),
+(31, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzQ5NDAwNywiZXhwIjoxNzQ3NDk3NjA3fQ.Ef_VJDH03lBOfmnqnIh6ZDN4zXfXZUVWJj2Qtzk5vgM', 6);
 
 -- --------------------------------------------------------
 
@@ -172,7 +169,8 @@ CREATE TABLE `company` (
 INSERT INTO `company` (`id`, `name`, `description`, `image_url`, `user_id`, `location_id`, `created`, `updated`) VALUES
 (1, 'Tech Solutions Inc.', 'Providing IT services and support', 'https://example.com/techsolutions.jpg', 6, 2, '2025-04-29 13:58:43', '2025-04-29 13:58:43'),
 (2, 'Home Services LLC', 'Professional home maintenance and repair', 'https://example.com/homeservices.jpg', 6, 3, '2025-04-29 13:58:43', '2025-04-29 13:58:43'),
-(3, 'Tech Solutions Inc.', 'IT services company', 'https://example.com/logo.jpg', 6, 5, '2025-05-09 23:22:19', '2025-05-09 23:22:19');
+(3, 'Tech Solutions Inc.', 'IT services company', 'https://example.com/logo.jpg', 6, 5, '2025-05-09 23:22:19', '2025-05-09 23:22:19'),
+(4, 'Test', 'asfasdgsdbfdsvdsbfbfdbs', 'https://example.com/logo.jpg', 6, 6, '2025-05-17 17:16:01', '2025-05-17 17:16:01');
 
 -- --------------------------------------------------------
 
@@ -284,7 +282,8 @@ INSERT INTO `location` (`id`, `zip_code`, `city_id`) VALUES
 (2, 10001, 2),
 (3, 90001, 3),
 (4, 301, 1),
-(5, 10001, 2);
+(5, 10001, 2),
+(6, 10001, 2);
 
 -- --------------------------------------------------------
 
@@ -825,7 +824,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `auth`
 --
 ALTER TABLE `auth`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `chat`
@@ -849,7 +848,7 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `company`
 --
 ALTER TABLE `company`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `company_feedback`
@@ -879,7 +878,7 @@ ALTER TABLE `job_application`
 -- AUTO_INCREMENT for table `location`
 --
 ALTER TABLE `location`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pay_info`
