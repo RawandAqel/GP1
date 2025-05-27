@@ -106,9 +106,34 @@ const authorizeCompanyOwner = async (req, res, next) => {
         });
     }
 };
+const authorizeClient = async (req, res, next) => {
+    try {
+        const [client] = await pool.query(
+            'SELECT * FROM client WHERE user_id = ?', 
+            [req.user.id]
+        );
 
+        if (!client.length) {
+            return res.status(403).json({
+                success: false,
+                message: 'Not authorized as a service client'
+            });
+        }
+
+        // Attach the complete client record to the request
+        req.client = client[0];
+        next();
+    } catch (error) {
+        console.error('client authorization error:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Server error during client authorization'
+        });
+    }
+};
 module.exports = {
     authenticate,
     authorizeProvider,
-    authorizeCompanyOwner
+    authorizeCompanyOwner,
+    authorizeClient
 };
