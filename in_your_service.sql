@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2025 at 05:00 PM
+-- Generation Time: May 27, 2025 at 02:12 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -74,7 +74,16 @@ INSERT INTO `auth` (`id`, `token`, `user_id`) VALUES
 (28, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0NzI2MjY4MSwiZXhwIjoxNzQ3MjY2MjgxfQ.Ry2nKG_pnjICOBMJ7MfQxxxEtyzn6rVW5ukey34_12M', 3),
 (29, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0NzI2MjkwMSwiZXhwIjoxNzQ3MjY2NTAxfQ.qGabE0TZ6YD07lSeJufBl73Pu9Anw-_VBibZlLHvVl4', 5),
 (30, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzQ5MTMwMCwiZXhwIjoxNzQ3NDk0OTAwfQ.zlUybgVowOXSu2_K2TBO2_NhvNeiP0cSy2tGonLY4ZA', 6),
-(31, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzQ5NDAwNywiZXhwIjoxNzQ3NDk3NjA3fQ.Ef_VJDH03lBOfmnqnIh6ZDN4zXfXZUVWJj2Qtzk5vgM', 6);
+(31, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzQ5NDAwNywiZXhwIjoxNzQ3NDk3NjA3fQ.Ef_VJDH03lBOfmnqnIh6ZDN4zXfXZUVWJj2Qtzk5vgM', 6),
+(32, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzU2ODUyMCwiZXhwIjoxNzQ3NTcyMTIwfQ.RXwq39LhxSaBWTuU_fd0A6H6Dqzt1kUWMlFk_rhxHWQ', 6),
+(33, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzU2OTYzNywiZXhwIjoxNzQ3NTczMjM3fQ.KruTFgDaVlut4uTRz0lzL9zYITEuUoRzKCgA51f_hTs', 6),
+(34, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0NzU3MjQ0OSwiZXhwIjoxNzQ3NTc2MDQ5fQ.ZvY2OKAIy_tzRj8BnvF6KDvAJshUuYXnfTDoLdk0hyM', 5),
+(35, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0NzU3MjU5MiwiZXhwIjoxNzQ3NTc2MTkyfQ.Fq_Nc3RZQlH05DKwTBqYtQQLhdc-S3JLB9FGkMIxQSE', 5),
+(36, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzU4MDEzOSwiZXhwIjoxNzQ3NTgzNzM5fQ.Eq4Am6IoIzTcaTfG3TPVPzO52znQV2KkQWjCbiljKwY', 6),
+(37, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzY5MzI1NCwiZXhwIjoxNzQ3Njk2ODU0fQ.u0UXJTk7akGy9y3-PH0Lsjh42r7tnvbpGYxjSux7QMk', 6),
+(38, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODA4NjI3NCwiZXhwIjoxNzQ4MDg5ODc0fQ.b2UF8Glt-Rapo8MSXTnbTbufl1zV_O2cdN2In0iPL3I', 1),
+(39, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODA5MzcyNywiZXhwIjoxNzQ4MDk3MzI3fQ.rxWAF0PyqASjlNwHGgQ5zdzmdyqfgabY-IS_REuzaAg', 1),
+(40, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODEwNzMxOCwiZXhwIjoxNzQ4MTEwOTE4fQ.L3z_gBzCyJtPW5Pi1yM-YhngHuoZk9gCJnoAfs1pCoM', 1);
 
 -- --------------------------------------------------------
 
@@ -192,7 +201,9 @@ CREATE TABLE `company_feedback` (
 
 INSERT INTO `company_feedback` (`id`, `feedback`, `rate`, `client_id`, `company_id`) VALUES
 (1, 'Great IT services overall', 5, 1, 1),
-(2, 'Very satisfied with the home services', 4, 3, 2);
+(2, 'Very satisfied with the home services', 4, 3, 2),
+(3, 'Good', 3, 2, 3),
+(4, 'Nice', NULL, 3, 4);
 
 -- --------------------------------------------------------
 
@@ -278,7 +289,7 @@ CREATE TABLE `location` (
 --
 
 INSERT INTO `location` (`id`, `zip_code`, `city_id`) VALUES
-(1, 105, 1),
+(1, 10011, 1),
 (2, 10001, 2),
 (3, 90001, 3),
 (4, 301, 1),
@@ -407,10 +418,11 @@ CREATE TABLE `project` (
 --
 
 INSERT INTO `project` (`id`, `name`, `client_id`, `team_id`, `Initial_price`, `max_price`, `actual_price`, `description`, `start_date`, `end_date`, `Initial_time_s`, `final_time_s`, `actual_time`, `created`, `updated`) VALUES
-(1, 'Updated Project Name', 1, 1, 5000, 7500, 6000, 'Build a new company website', '2025-04-01', '2025-10-01', 3600, 7200, 5400, '2025-04-29 14:01:51', '2025-05-10 00:34:43'),
+(1, 'Updated Project Name', 1, 1, 5000, 7500, 6000, 'Updated scope: Include e-commerce functionality', '2025-04-01', '2025-10-01', 3600, 7200, 5400, '2025-04-29 14:01:51', '2025-05-24 20:49:05'),
 (2, 'Office Network Setup', 2, 2, 3000, 4500, 3200, 'Setup office network infrastructure', '2025-04-10', '2025-04-30', 1800, 3600, 2400, '2025-04-29 14:01:51', '2025-04-29 14:01:51'),
 (3, 'Bathroom Remodel', 3, 3, 8000, 12000, 9500, 'Complete bathroom renovation', '2025-05-01', '2025-06-15', 7200, 14400, 10800, '2025-04-29 14:01:51', '2025-04-29 14:01:51'),
-(4, 'Mobile App Development', 1, 1, 10000, 15000, NULL, 'iOS and Android app', '2025-06-01', '2025-09-01', NULL, NULL, NULL, '2025-05-09 23:55:05', '2025-05-09 23:55:05');
+(4, 'Mobile App Development', 1, 1, 10000, 15000, NULL, 'iOS and Android app', '2025-06-01', '2025-09-01', NULL, NULL, NULL, '2025-05-09 23:55:05', '2025-05-09 23:55:05'),
+(5, 'Website Redesign', 1, 1, 5000, 7500, NULL, 'Complete website redesign with responsive layout', '2025-06-01', '2025-08-15', NULL, NULL, NULL, '2025-05-24 20:45:05', '2025-05-24 20:45:05');
 
 -- --------------------------------------------------------
 
@@ -565,10 +577,11 @@ CREATE TABLE `task` (
 --
 
 INSERT INTO `task` (`id`, `service_provider_id`, `client_id`, `completed`, `cancelled`, `estimated_distance`, `estimated_timing`, `description`, `Initial_price`, `Maximum_price`, `created`, `updated`, `status`, `rejection_reason`, `notes`, `actual_time`, `actual_price`) VALUES
-(1, 1, 1, 0, 0, NULL, '02:00:00', 'Develop homepage', 150, 1500, '2025-04-29 14:02:00', '2025-05-02 00:37:48', 'pending', NULL, 'Will need special tools', 90, 175.5),
+(1, 1, 1, 0, 0, NULL, '02:00:00', 'Fix kitchen sink and bathroom faucet', 150, 1500, '2025-04-29 14:02:00', '2025-05-24 20:34:22', 'Approved', NULL, 'Will need special tools', 90, 175.5),
 (2, 1, 1, 0, 0, NULL, '02:00:00', 'Develop admin panel', 150, 2000, '2025-04-29 14:02:00', '2025-05-10 00:59:36', 'rejected', 'Testttt', 'Will need special tools', 90, 175.5),
 (3, 2, 3, 0, 0, 15.5, '04:00:00', 'Replace bathroom pipes', 1200, 1800, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL),
-(4, 3, 2, 0, 0, NULL, '06:00:00', 'Install network cables', 800, 1200, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL);
+(4, 3, 2, 0, 0, NULL, '06:00:00', 'Install network cables', 800, 1200, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL),
+(5, 1, 1, 0, 0, 10.5, '02:30:00', 'Fix kitchen sink', 150, 200, '2025-05-24 20:36:53', '2025-05-24 20:36:53', 'pending', NULL, 'Available on weekends only', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -621,7 +634,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `first_name`, `last_name`, `email`, `phone`, `password`, `image_url`, `facebook_url`, `location_id`, `created`, `updated`) VALUES
-(1, 'Rawand', 'Aqel', 'Rawand@gmail.com', 0, 'Rawand12345', 'Test', 'test', 1, '2025-03-19 02:21:40', '2025-03-19 05:04:39'),
+(1, 'Rawandd', 'Aqell', 'Rawand@gmail.com', 0, 'Rawand12345', 'Test', 'test', 1, '2025-03-19 02:21:40', '2025-05-24 14:52:03'),
 (2, 'John', 'Doe', 'john.doe@example.com', 0, 'password123', 'https://example.com/john.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:16:20', '2025-03-19 05:16:20'),
 (3, 'John', 'Doe', 'jane.smith@example.com', 0, 'password123', 'https://example.com/newphoto.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:17:42', '2025-05-02 00:38:50'),
 (4, 'Rawand', 'Aqel', 'Rawand@example.com', 0, 'password123', 'https://example.com/jane.jpg', 'https://facebook.com/jane.smith', 4, '2025-04-29 13:52:48', '2025-04-29 13:52:48'),
@@ -824,7 +837,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `auth`
 --
 ALTER TABLE `auth`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `chat`
@@ -854,7 +867,7 @@ ALTER TABLE `company`
 -- AUTO_INCREMENT for table `company_feedback`
 --
 ALTER TABLE `company_feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `company_settings`
@@ -908,7 +921,7 @@ ALTER TABLE `position_provider`
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `project_milestone`
@@ -944,7 +957,7 @@ ALTER TABLE `service_provider`
 -- AUTO_INCREMENT for table `task`
 --
 ALTER TABLE `task`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `team`
