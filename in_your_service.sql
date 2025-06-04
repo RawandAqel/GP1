@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2025 at 02:12 PM
+-- Generation Time: Jun 05, 2025 at 01:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -83,7 +83,18 @@ INSERT INTO `auth` (`id`, `token`, `user_id`) VALUES
 (37, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0NzY5MzI1NCwiZXhwIjoxNzQ3Njk2ODU0fQ.u0UXJTk7akGy9y3-PH0Lsjh42r7tnvbpGYxjSux7QMk', 6),
 (38, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODA4NjI3NCwiZXhwIjoxNzQ4MDg5ODc0fQ.b2UF8Glt-Rapo8MSXTnbTbufl1zV_O2cdN2In0iPL3I', 1),
 (39, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODA5MzcyNywiZXhwIjoxNzQ4MDk3MzI3fQ.rxWAF0PyqASjlNwHGgQ5zdzmdyqfgabY-IS_REuzaAg', 1),
-(40, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODEwNzMxOCwiZXhwIjoxNzQ4MTEwOTE4fQ.L3z_gBzCyJtPW5Pi1yM-YhngHuoZk9gCJnoAfs1pCoM', 1);
+(40, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODEwNzMxOCwiZXhwIjoxNzQ4MTEwOTE4fQ.L3z_gBzCyJtPW5Pi1yM-YhngHuoZk9gCJnoAfs1pCoM', 1),
+(41, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODYzODA4NywiZXhwIjoxNzQ4NjQxNjg3fQ.vezW_zMfT6RmIjvM6OevGsc_UHqZ72l6fbUkjRafZBI', 1),
+(42, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODkwMzU3MSwiZXhwIjoxNzQ4OTA3MTcxfQ.a3gj82-qEsEEt99RlpzsA9eZbli1kJDiv2LooM3VZas', 1),
+(43, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODkwNDAxMCwiZXhwIjoxNzQ4OTA3NjEwfQ.QFBdoqNPc4oy5OcJ-opq3A_iX_BzYrsXBMR6n7-y4Rc', 1),
+(44, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODkwODEwNSwiZXhwIjoxNzQ4OTExNzA1fQ.-7Yr6wvV7GFOjCMOz6wpO3JUtZSjnUTmAdLw5zs7cQU', 1),
+(45, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTc0ODkwOTQwMSwiZXhwIjoxNzQ4OTEzMDAxfQ.kiPxGsNSbIoglYMl_zBvGS1z2ksrGhxDSuRwJu30SwQ', 6),
+(46, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0ODkwOTczMiwiZXhwIjoxNzQ4OTEzMzMyfQ.Tvq2L-Bb23ItLUgZFqXbqml_jCTFwVt1NR53RFk6ZZw', 5),
+(47, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODkxMDk3NSwiZXhwIjoxNzQ4OTE0NTc1fQ.uImpno2rogwEd948PfvzRGjpEWXkCPwNi-Lwvw3gbXQ', 1),
+(48, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODkxMjE3NywiZXhwIjoxNzQ4OTE1Nzc3fQ.z6YeSbQkappjC4LqRPhvVZtNSQYo50FvVFr9zPU1_CI', 1),
+(49, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc0ODkxMzc1NCwiZXhwIjoxNzQ4OTE3MzU0fQ.oZEBhFle4QJhCS5HEqSAKOH-01_Wg0t7JtofUoljaRs', 3),
+(50, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0ODkxNDIwNCwiZXhwIjoxNzQ4OTE3ODA0fQ.xZUBtq8kF24SYwBnnHXIvZdvf_Ap_dbYnq8QBG2MHgo', 1),
+(51, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0OTA3NTExNCwiZXhwIjoxNzQ5MDc4NzE0fQ.LuMpm1BJ0akVxcEdj00a4LLM42fgZw5Jusn6ElN8dtU', 1);
 
 -- --------------------------------------------------------
 
@@ -108,7 +119,11 @@ INSERT INTO `chat` (`id`, `msg`, `sender_id`, `recever_id`, `created`, `updated`
 (1, 'Hi, when can you start the project?', 1, 6, '2025-04-15 10:30:00', '2025-04-15 10:30:00'),
 (2, 'We can start next Monday', 6, 1, '2025-04-15 10:35:00', '2025-04-15 10:35:00'),
 (3, 'I have a leak in my bathroom', 3, 2, '2025-04-16 14:20:00', '2025-04-16 14:20:00'),
-(4, 'I can come tomorrow at 9am', 2, 3, '2025-04-16 14:25:00', '2025-04-16 14:25:00');
+(4, 'I can come tomorrow at 9am', 2, 3, '2025-04-16 14:25:00', '2025-04-16 14:25:00'),
+(5, 'Hello, when can you start?', 1, 3, '2025-06-03 03:56:32', '2025-06-03 03:56:32'),
+(6, 'Hello', 1, 3, '2025-06-03 03:57:37', '2025-06-03 03:57:37'),
+(7, 'Welcome', 1, 3, '2025-06-03 04:09:00', '2025-06-03 04:09:00'),
+(8, 'Hi , how are you?', 3, 1, '2025-06-03 04:23:06', '2025-06-03 04:23:06');
 
 -- --------------------------------------------------------
 
@@ -200,10 +215,10 @@ CREATE TABLE `company_feedback` (
 --
 
 INSERT INTO `company_feedback` (`id`, `feedback`, `rate`, `client_id`, `company_id`) VALUES
-(1, 'Great IT services overall', 5, 1, 1),
 (2, 'Very satisfied with the home services', 4, 3, 2),
 (3, 'Good', 3, 2, 3),
-(4, 'Nice', NULL, 3, 4);
+(4, 'Nice', 3, 3, 4),
+(5, 'Good work overall', 4, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -281,20 +296,49 @@ INSERT INTO `job_application` (`id`, `job_id`, `company_id`, `created`, `updated
 CREATE TABLE `location` (
   `id` int(11) NOT NULL,
   `zip_code` int(11) DEFAULT NULL,
-  `city_id` int(11) DEFAULT NULL
+  `city_id` int(11) DEFAULT NULL,
+  `latitude` decimal(10,8) DEFAULT NULL,
+  `longitude` decimal(11,8) DEFAULT NULL,
+  `updated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `location`
 --
 
-INSERT INTO `location` (`id`, `zip_code`, `city_id`) VALUES
-(1, 10011, 1),
-(2, 10001, 2),
-(3, 90001, 3),
-(4, 301, 1),
-(5, 10001, 2),
-(6, 10001, 2);
+INSERT INTO `location` (`id`, `zip_code`, `city_id`, `latitude`, `longitude`, `updated`) VALUES
+(1, 10011, 1, 32.22220000, 35.26260000, '2025-06-03 04:33:49'),
+(2, 10001, 2, 33.00000000, 55.00000000, '2025-06-03 04:33:49'),
+(3, 90001, 3, NULL, NULL, NULL),
+(4, 301, 1, NULL, NULL, NULL),
+(5, 10001, 2, NULL, NULL, NULL),
+(6, 10001, 2, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notification`
+--
+
+CREATE TABLE `notification` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `message` varchar(255) NOT NULL,
+  `type` enum('task','project','message','system') NOT NULL,
+  `related_id` int(11) DEFAULT NULL,
+  `is_read` tinyint(1) DEFAULT 0,
+  `created` datetime DEFAULT current_timestamp(),
+  `updated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `notification`
+--
+
+INSERT INTO `notification` (`id`, `user_id`, `message`, `type`, `related_id`, `is_read`, `created`, `updated`) VALUES
+(1, 1, 'you have a new msg', 'message', 2, 0, '2025-06-03 03:07:29', '2025-06-03 03:07:29'),
+(2, 1, 'you have a new msg', 'message', 2, 0, '2025-06-03 03:10:16', '2025-06-03 03:10:16'),
+(3, 5, 'you have a new msg', 'message', 2, 0, '2025-06-03 03:15:47', '2025-06-03 03:15:47');
 
 -- --------------------------------------------------------
 
@@ -471,9 +515,9 @@ CREATE TABLE `provider_feedback` (
 --
 
 INSERT INTO `provider_feedback` (`id`, `feedback`, `rate`, `client_id`, `service_provider_id`) VALUES
-(1, 'Excellent work, very professional!', 5, 1, 1),
 (2, 'Fixed my plumbing issues quickly', 4, 3, 2),
-(3, 'Network setup was perfect', 5, 2, 3);
+(3, 'Network setup was perfect', 5, 2, 3),
+(4, 'Excellent service!', 5, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -577,7 +621,7 @@ CREATE TABLE `task` (
 --
 
 INSERT INTO `task` (`id`, `service_provider_id`, `client_id`, `completed`, `cancelled`, `estimated_distance`, `estimated_timing`, `description`, `Initial_price`, `Maximum_price`, `created`, `updated`, `status`, `rejection_reason`, `notes`, `actual_time`, `actual_price`) VALUES
-(1, 1, 1, 0, 0, NULL, '02:00:00', 'Fix kitchen sink and bathroom faucet', 150, 1500, '2025-04-29 14:02:00', '2025-05-24 20:34:22', 'Approved', NULL, 'Will need special tools', 90, 175.5),
+(1, 1, 1, 1, 0, NULL, '02:00:00', 'Fix kitchen sink and bathroom faucet', 150, 1500, '2025-04-29 14:02:00', '2025-06-03 03:37:47', 'completed', NULL, 'Will need special tools', 90, 175.5),
 (2, 1, 1, 0, 0, NULL, '02:00:00', 'Develop admin panel', 150, 2000, '2025-04-29 14:02:00', '2025-05-10 00:59:36', 'rejected', 'Testttt', 'Will need special tools', 90, 175.5),
 (3, 2, 3, 0, 0, 15.5, '04:00:00', 'Replace bathroom pipes', 1200, 1800, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL),
 (4, 3, 2, 0, 0, NULL, '06:00:00', 'Install network cables', 800, 1200, '2025-04-29 14:02:00', '2025-04-29 14:02:00', 'pending', NULL, NULL, NULL, NULL),
@@ -636,7 +680,7 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `first_name`, `last_name`, `email`, `phone`, `password`, `image_url`, `facebook_url`, `location_id`, `created`, `updated`) VALUES
 (1, 'Rawandd', 'Aqell', 'Rawand@gmail.com', 0, 'Rawand12345', 'Test', 'test', 1, '2025-03-19 02:21:40', '2025-05-24 14:52:03'),
 (2, 'John', 'Doe', 'john.doe@example.com', 0, 'password123', 'https://example.com/john.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:16:20', '2025-03-19 05:16:20'),
-(3, 'John', 'Doe', 'jane.smith@example.com', 0, 'password123', 'https://example.com/newphoto.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:17:42', '2025-05-02 00:38:50'),
+(3, 'Aya', 'Test', 'jane.smith@example.com', 0, 'password123', 'https://example.com/newphoto.jpg', 'https://facebook.com/john.doe', 2, '2025-03-19 05:17:42', '2025-06-03 04:05:10'),
 (4, 'Rawand', 'Aqel', 'Rawand@example.com', 0, 'password123', 'https://example.com/jane.jpg', 'https://facebook.com/jane.smith', 4, '2025-04-29 13:52:48', '2025-04-29 13:52:48'),
 (5, 'Michael', 'Johnson', 'michael.johnson@example.com', 0, 'securepass123', 'https://example.com/michael.jpg', 'https://facebook.com/michael.johnson', 2, '2025-04-29 13:55:57', '2025-04-29 13:55:57'),
 (6, 'Sarah', 'Williams', 'sarah.williams@example.com', 0, 'sarahpass456', 'https://example.com/sarah.jpg', 'https://facebook.com/sarah.williams', 3, '2025-04-29 13:55:57', '2025-04-29 13:55:57'),
@@ -724,6 +768,13 @@ ALTER TABLE `job_application`
 ALTER TABLE `location`
   ADD PRIMARY KEY (`id`),
   ADD KEY `city_id` (`city_id`);
+
+--
+-- Indexes for table `notification`
+--
+ALTER TABLE `notification`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `pay_info`
@@ -837,13 +888,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `auth`
 --
 ALTER TABLE `auth`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `chat`
 --
 ALTER TABLE `chat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `city`
@@ -867,7 +918,7 @@ ALTER TABLE `company`
 -- AUTO_INCREMENT for table `company_feedback`
 --
 ALTER TABLE `company_feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `company_settings`
@@ -892,6 +943,12 @@ ALTER TABLE `job_application`
 --
 ALTER TABLE `location`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `notification`
+--
+ALTER TABLE `notification`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `pay_info`
@@ -933,7 +990,7 @@ ALTER TABLE `project_milestone`
 -- AUTO_INCREMENT for table `provider_feedback`
 --
 ALTER TABLE `provider_feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `provider_job`
@@ -1032,6 +1089,12 @@ ALTER TABLE `job_application`
 --
 ALTER TABLE `location`
   ADD CONSTRAINT `location_ibfk_1` FOREIGN KEY (`city_id`) REFERENCES `city` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `notification`
+--
+ALTER TABLE `notification`
+  ADD CONSTRAINT `notification_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
 -- Constraints for table `pay_info`

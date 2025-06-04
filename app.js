@@ -7,6 +7,11 @@ const providerWorkRoutes = require('./routes/providerWorkRoutes');
 const companyOwnerRoutes = require('./routes/companyOwnerRoutes');
 const milestoneRoutes = require('./routes/milestoneRoutes');
 const clientRoutes = require('./routes/clientRoutes');
+const forYouRoutes = require('./routes/recommendationRoutes');
+const notificationRoutes = require('./routes/notificationRoutes');
+const feedbackRoutes = require('./routes/feedbackRoutes');
+const chatRoutes = require('./routes/chatRoutes');
+const locationRoutes = require('./routes/locationRoutes');
 
 const app = express();
 
@@ -19,6 +24,11 @@ app.use('/api/provider/work', providerWorkRoutes);
 app.use('/api/owner', companyOwnerRoutes);
 app.use('/api/milestones', milestoneRoutes);
 app.use('/api/client', clientRoutes);
+app.use('/api/client', forYouRoutes);
+app.use('/api/notification', notificationRoutes);
+app.use('/api/feedback', feedbackRoutes);
+app.use('/api/chat', chatRoutes);
+app.use('/api/location', locationRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
