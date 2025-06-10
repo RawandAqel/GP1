@@ -12,6 +12,8 @@ const notificationRoutes = require('./routes/notificationRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
 const chatRoutes = require('./routes/chatRoutes');
 const locationRoutes = require('./routes/locationRoutes');
+const providerSearchRoites = require('./routes/providerSearchRoutes');
+const adminRoutes = require('./routes/adminRoutes');
 
 const app = express();
 
@@ -29,6 +31,8 @@ app.use('/api/notification', notificationRoutes);
 app.use('/api/feedback', feedbackRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/location', locationRoutes);
+app.use('/api/search', providerSearchRoites);
+app.use('/api/admin', adminRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
