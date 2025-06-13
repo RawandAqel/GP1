@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - Tasks</title>
+  <style>
+    body {
+      background-color: rgba(242, 222, 197, 1);
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: rgba(105, 124, 107, 1);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(85, 104, 87, 1);
+      padding: 10px 0;
+    }
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .nav-bar a:hover, .nav-bar a.active {
+      background-color: rgba(105, 124, 107, 1);
+    }
+    .container {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      margin-top: 20px;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(105, 124, 107, 1);
+      color: white;
+      position: sticky;
+      top: 0;
+    }
+    .loading {
+      text-align: center;
+      padding: 20px;
+    }
+    .error-message {
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+    .status-pending {
+      color: #f39c12;
+      font-weight: bold;
+    }
+    .status-completed {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+    .status-cancelled {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+       .status-rejected {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    .price {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Admin Dashboard - Tasks</h1>
+    <div class="nav-bar">
+      <a href="Admin.html">Users</a>
+      <a href="Tasks.html" class="active">Tasks</a>
+      <a href="Projects.html">Projects</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <table id="tasksTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Description</th>
+          <th>Client</th>
+          <th>Provider</th>
+          <th>Status</th>
+          <th>Initial Price</th>
+          <th>Max Price</th>
+          <th>Actual Price</th>
+          <th>Created</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="9" class="loading">Loading tasks...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const PROXY = 'http://localhost:8080/';
+    const BASE_API = 'http://localhost:3000/api/admin/';
+
+    // Fetch all tasks
+    async function fetchTasks() {
+      try {
+        const tbody = document.querySelector('#tasksTable tbody');
+        tbody.innerHTML = '<tr><td colspan="9" class="loading">Loading tasks...</td></tr>';
+        
+        const res = await fetch(PROXY + BASE_API + 'tasks');
+        const data = await res.json();
+        
+        if (data.success && data.tasks && data.tasks.length > 0) {
+          renderTasks(data.tasks);
+        } else {
+          tbody.innerHTML = '<tr><td colspan="9">No tasks found</td></tr>';
+        }
+      } catch (error) {
+        const tbody = document.querySelector('#tasksTable tbody');
+        tbody.innerHTML = '<tr><td colspan="9" class="error-message">Error loading tasks: ' + error.message + '</td></tr>';
+        console.error('Error fetching tasks:', error);
+      }
+    }
+
+    // Render tasks in the table
+    function renderTasks(tasks) {
+      const tbody = document.querySelector('#tasksTable tbody');
+      tbody.innerHTML = '';
+      
+      tasks.forEach(task => {
+        const row = document.createElement('tr');
+        const statusClass = `status-${task.status.toLowerCase()}`;
+        const createdDate = new Date(task.created).toLocaleDateString();
+        
+        row.innerHTML = `
+          <td>${task.id}</td>
+          <td>${task.description}</td>
+          <td>${task.client_name}</td>
+          <td>${task.provider_name || 'Unassigned'}</td>
+          <td class="${statusClass}">${task.status}</td>
+          <td class="price">$${task.Initial_price}</td>
+          <td class="price">$${task.Maximum_price}</td>
+          <td class="price">${task.actual_price ? '$' + task.actual_price : '-'}</td>
+          <td>${createdDate}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Initialize
+    fetchTasks();
+  </script>
+
+</body>
+</html>
