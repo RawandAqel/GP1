@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - Projects</title>
+  <style>
+    body {
+      background-color: rgba(242, 222, 197, 1);
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: rgba(105, 124, 107, 1);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(85, 104, 87, 1);
+      padding: 10px 0;
+    }
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .nav-bar a:hover, .nav-bar a.active {
+      background-color: rgba(105, 124, 107, 1);
+    }
+    .container {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      margin-top: 20px;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(105, 124, 107, 1);
+      color: white;
+      position: sticky;
+      top: 0;
+    }
+    .loading {
+      text-align: center;
+      padding: 20px;
+    }
+    .error-message {
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+    .price {
+      font-family: monospace;
+    }
+    .milestone-count {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Admin Dashboard - Projects</h1>
+    <div class="nav-bar">
+      <a href="Admin.html">Users</a>
+      <a href="Tasks.html">Tasks</a>
+      <a href="Projects.html" class="active">Projects</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <table id="projectsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Client</th>
+          <th>Company</th>
+          <th>Team</th>
+          <th>Initial Price</th>
+          <th>Max Price</th>
+          <th>Actual Price</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Milestones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="12" class="loading">Loading projects...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const PROXY = 'http://localhost:8080/';
+    const BASE_API = 'http://localhost:3000/api/admin/';
+
+    // Format date for display
+    function formatDate(dateString) {
+      if (!dateString) return '-';
+      const date = new Date(dateString);
+      return date.toLocaleDateString();
+    }
+
+    // Fetch all projects
+    async function fetchProjects() {
+      try {
+        const tbody = document.querySelector('#projectsTable tbody');
+        tbody.innerHTML = '<tr><td colspan="12" class="loading">Loading projects...</td></tr>';
+        
+        const res = await fetch(PROXY + BASE_API + 'projects');
+        const data = await res.json();
+        
+        if (data.success && data.projects && data.projects.length > 0) {
+          renderProjects(data.projects);
+        } else {
+          tbody.innerHTML = '<tr><td colspan="12">No projects found</td></tr>';
+        }
+      } catch (error) {
+        const tbody = document.querySelector('#projectsTable tbody');
+        tbody.innerHTML = '<tr><td colspan="12" class="error-message">Error loading projects: ' + error.message + '</td></tr>';
+        console.error('Error fetching projects:', error);
+      }
+    }
+
+    // Render projects in the table
+    function renderProjects(projects) {
+      const tbody = document.querySelector('#projectsTable tbody');
+      tbody.innerHTML = '';
+      
+      projects.forEach(project => {
+        const row = document.createElement('tr');
+        
+        row.innerHTML = `
+          <td>${project.id}</td>
+          <td>${project.name}</td>
+          <td>${project.description}</td>
+          <td>${project.client_name}</td>
+          <td>${project.company_name || '-'}</td>
+          <td>${project.team_name || '-'}</td>
+          <td class="price">$${project.Initial_price}</td>
+          <td class="price">$${project.max_price}</td>
+          <td class="price">${project.actual_price ? '$' + project.actual_price : '-'}</td>
+          <td>${formatDate(project.start_date)}</td>
+          <td>${formatDate(project.end_date)}</td>
+          <td class="milestone-count">${project.milestone_count}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Initialize
+    fetchProjects();
+  </script>
+
+</body>
+</html>
